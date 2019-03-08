@@ -1,8 +1,8 @@
 /datum/game_mode/devil/devil_agents
 	name = "Devil Agents"
 	config_tag = "devilagents"
-	required_players = 25
-	required_enemies = 3
+	required_players = 1
+	required_enemies = 1
 	recommended_enemies = 8
 
 	traitors_possible = 10 //hard limit on traitors if scaling is turned off

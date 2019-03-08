@@ -69,8 +69,8 @@ Made by Xhuis
 /datum/game_mode/shadowling
 	name = "shadowling"
 	config_tag = "shadowling"
-	required_players = 30
-	required_enemies = 2
+	required_players = 1
+	required_enemies = 1
 	recommended_enemies = 2
 	restricted_jobs = list("AI", "Cyborg")
 	protected_jobs = list("Security Officer", "Warden", "Detective", "Head of Security", "Captain", "Blueshield", "Nanotrasen Representative", "Security Pod Pilot", "Magistrate", "Brig Physician", "Internal Affairs Agent", "Nanotrasen Navy Officer", "Special Operations Officer", "Syndicate Officer")

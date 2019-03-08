@@ -9,8 +9,8 @@ proc/issyndicate(mob/living/M as mob)
 /datum/game_mode/nuclear
 	name = "nuclear emergency"
 	config_tag = "nuclear"
-	required_players = 30	// 30 players - 5 players to be the nuke ops = 25 players remaining
-	required_enemies = 5
+	required_players = 1	// 30 players - 5 players to be the nuke ops = 25 players remaining
+	required_enemies = 1
 	recommended_enemies = 5
 	free_golems_disabled = TRUE
 
