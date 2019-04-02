@@ -449,6 +449,16 @@
 	burn_state = FLAMMABLE
 	burntime = 20
 
+/obj/structure/table/wood/attackby(obj/item/I, mob/user, params)
+	if(can_deconstruct)
+		if(isfireaxe(I) && deconstruction_ready)
+			to_chat(user, "<span class='notice'>You start to cut [src] in half with your fire axe.</span>")
+			playsound(loc, I.usesound, 50, 1)
+			if(do_after(user, 3*I.toolspeed, target = src))
+				playsound(loc, 'sound/weapons/genhit.ogg', 50, 1)
+				to_chat(user, "<span class='warning'>You broke [src] apart with your fire axe!</span>")
+				deconstruct(TRUE, 1)
+
 /obj/structure/table/wood/narsie_act(total_override = TRUE)
 	if(!total_override)
 		..()
