@@ -455,7 +455,7 @@
 			to_chat(user, "<span class='notice'>You start to cut [src] in half with your fire axe.</span>")
 			playsound(loc, I.usesound, 50, 1)
 			if(do_after(user, 3*I.toolspeed, target = src))
-				playsound(loc, 'sound/weapons/genhit.ogg', 50, 1)
+				playsound(loc, 'sound/weapons/genhit.ogg', 50, 1) //depois pego um som melhor
 				to_chat(user, "<span class='warning'>You broke [src] apart with your fire axe!</span>")
 				deconstruct(TRUE, 1)
 
