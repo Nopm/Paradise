@@ -1,4 +1,4 @@
-/obj/structure/reagent_dispensers
+ô/obj/structure/reagent_dispensers
 	name = "Dispenser"
 	desc = "..."
 	icon = 'icons/obj/objects.dmi'
@@ -212,6 +212,14 @@
 	anchored = 1
 	density = 0
 	reagent_id = "condensedcapsaicin"
+
+/obj/structure/reagent_dispensers/unstablemutagen
+	name = "unstable mutagen dispenser"
+	desc = "Contains unstable mutagen for use in hydrophonics."
+	icon_state = "umut"
+	anchored = 1
+	density = 0
+	reagent_id = "mutagen"
 
 /obj/structure/reagent_dispensers/water_cooler
 	name = "liquid cooler"
