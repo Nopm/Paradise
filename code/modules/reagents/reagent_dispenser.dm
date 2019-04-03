@@ -212,6 +212,12 @@
 	anchored = 1
 	density = 0
 	reagent_id = "condensedcapsaicin"
+	tank_volume = 3000
+
+/obj/structure/reagent_dispensers/peppertank/examine(mob/user)
+	if(!..(user, 2))
+		return
+	to_chat(user, "There are [tank_volume ? tank_volume : "no"] condensed capsaicin left inside the dispenser.")
 
 /obj/structure/reagent_dispensers/unstablemutagen
 	name = "unstable mutagen dispenser"
@@ -220,7 +226,7 @@
 	anchored = 1
 	density = 0
 	reagent_id = "mutagen"
-	tank_volume = 300
+	tank_volume = 3000
 
 /obj/structure/reagent_dispensers/unstablemutagen/examine(mob/user)
 	if(!..(user, 2))
