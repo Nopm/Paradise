@@ -220,6 +220,7 @@
 	anchored = 1
 	density = 0
 	reagent_id = "mutagen"
+	tank_volume = 300
 
 /obj/structure/reagent_dispensers/water_cooler
 	name = "liquid cooler"
