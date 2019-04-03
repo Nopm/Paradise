@@ -1,4 +1,4 @@
-ô/obj/structure/reagent_dispensers
+/obj/structure/reagent_dispensers
 	name = "Dispenser"
 	desc = "..."
 	icon = 'icons/obj/objects.dmi'
