@@ -222,6 +222,11 @@
 	reagent_id = "mutagen"
 	tank_volume = 300
 
+/obj/structure/reagent_dispensers/unstablemutagen/examine(mob/user)
+	if(!..(user, 2))
+		return
+	to_chat(user, "There are [tank_volume ? tank_volume : "no"] unstable mutagen left inside the dispenser.")
+
 /obj/structure/reagent_dispensers/water_cooler
 	name = "liquid cooler"
 	desc = "A machine that dispenses liquid to drink."
