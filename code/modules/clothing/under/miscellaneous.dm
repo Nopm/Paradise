@@ -12,6 +12,13 @@
 	item_color = "blue_pyjamas"
 	item_state = "w_suit"
 
+/obj/item/clothing/under/clownpiece
+	name = "Clownpiece's Pierrot suit"
+	desc = "A female-sized set of leggings and shirt with a pattern similar to the American flag, featuring a frilled collar."
+	icon_state = "clownpiece"
+	item_color = "clownpiece"
+	item_state = "clownpiece"
+
 /obj/item/clothing/under/patriotsuit
 	name = "Patriotic Suit"
 	desc = "Motorcycle not included."
