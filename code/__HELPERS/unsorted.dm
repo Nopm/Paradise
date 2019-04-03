@@ -1138,6 +1138,11 @@ var/global/list/common_tools = list(
 		return 1
 	return 0
 
+/proc/isfireaxe(O)
+	if(istype(O, /obj/item/twohanded/fireaxe))
+		return 1
+	return 0
+
 /proc/iswelder(O)
 	if(istype(O, /obj/item/weldingtool))
 		return 1
