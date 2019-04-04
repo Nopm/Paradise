@@ -204,20 +204,6 @@
 	if(rig)
 		rig.process_movement()
 
-/obj/structure/reagent_dispensers/unstablemutagen
-	name = "unstable mutagen dispenser"
-	desc = "Contains unstable mutagen for use in hydroponics."
-	icon_state = "umut"
-	anchored = 1
-	density = 0
-	reagent_id = "mutagen"
-	tank_volume = 3000
-
-/obj/structure/reagent_dispensers/unstablemutagen/examine(mob/user)
-	if(!..(user, 2))
-		return
-	to_chat(user, "There are [tank_volume ? tank_volume : "no"] unstable mutagen left inside the dispenser.")
-
 /obj/structure/reagent_dispensers/peppertank
 	name = "pepper spray refiller"
 	desc = "Contains condensed capsaicin for use in law \"enforcement.\""
@@ -231,6 +217,20 @@
 	if(!..(user, 2))
 		return
 	to_chat(user, "There are [tank_volume ? tank_volume : "no"] condensed capsaicin left inside the dispenser.")
+
+/obj/structure/reagent_dispensers/unstablemutagen
+	name = "unstable mutagen dispenser"
+	desc = "Contains unstable mutagen for use in hydroponics."
+	icon_state = "umut"
+	anchored = 1
+	density = 0
+	reagent_id = "mutagen"
+	tank_volume = 3000
+
+/obj/structure/reagent_dispensers/unstablemutagen/examine(mob/user)
+	if(!..(user, 2))
+		return
+	to_chat(user, "There are [tank_volume ? tank_volume : "no"] unstable mutagen left inside the dispenser.")
 
 /obj/structure/reagent_dispensers/water_cooler
 	name = "liquid cooler"
@@ -318,19 +318,9 @@
 	tank_volume = 5000
 	reagent_id = "cleaner"
 
-/obj/structure/reagent_dispensers/spacecleanertank/examine(mob/user)
-	if(!..(user, 2))
-		return
-	to_chat(user, "There are [tank_volume ? tank_volume : "no"] space cleaner fluid left inside the dispenser.")
-
 /obj/structure/reagent_dispensers/fueltank/chem
 	icon_state = "fuel_chem"
 	anchored = 1
 	density = 0
 	accepts_rig = 0
 	tank_volume = 1000
-
-/obj/structure/reagent_dispensers/fueltank/chem/examine(mob/user)
-	if(!..(user, 2))
-		return
-	to_chat(user, "There are [tank_volume ? tank_volume : "no"] fuel left inside the dispenser.")
