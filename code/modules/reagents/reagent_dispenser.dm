@@ -290,6 +290,14 @@
 	icon_state = "beer"
 	reagent_id = "beer"
 
+/obj/structure/reagent_dispensers/unstablemutagen
+	name = "unstable mutagen dispenser"
+	desc = "Contains unstable mutagen for use in hydroponics."
+	icon_state = "umut"
+	anchored = 1
+	density = 0
+	reagent_id = "mutagen"
+
 /obj/structure/reagent_dispensers/beerkeg/blob_act()
 	explosion(loc, 0, 3, 5, 7, 10)
 	qdel(src)
