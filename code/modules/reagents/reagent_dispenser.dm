@@ -204,6 +204,19 @@
 	if(rig)
 		rig.process_movement()
 
+/obj/structure/reagent_dispensers/unstablemutagen
+	name = "unstable mutagen dispenser"
+	desc = "Contains unstable mutagen for use in hydroponics."
+	icon_state = "umut"
+	anchored = 1
+	density = 0
+	reagent_id = "mutagen"
+	tank_volume = 3000
+
+/obj/structure/reagent_dispensers/unstablemutagen/examine(mob/user)
+	if(!..(user, 2))
+		return
+	to_chat(user, "There are [tank_volume ? tank_volume : "no"] unstable mutagen left inside the dispenser.")
 
 /obj/structure/reagent_dispensers/peppertank
 	name = "pepper spray refiller"
@@ -218,20 +231,6 @@
 	if(!..(user, 2))
 		return
 	to_chat(user, "There are [tank_volume ? tank_volume : "no"] condensed capsaicin left inside the dispenser.")
-
-/obj/structure/reagent_dispensers/unstablemutagen
-	name = "unstable mutagen dispenser"
-	desc = "Contains unstable mutagen for use in hydroponics."
-	icon_state = "umut"
-	anchored = 1
-	density = 0
-	reagent_id = "mutagen"
-	tank_volume = 3000
-
-/obj/structure/reagent_dispensers/unstablemutagen/examine(mob/user)
-	if(!..(user, 2))
-		return
-	to_chat(user, "There are [tank_volume ? tank_volume : "no"] unstable mutagen left inside the dispenser.")
 
 /obj/structure/reagent_dispensers/water_cooler
 	name = "liquid cooler"
